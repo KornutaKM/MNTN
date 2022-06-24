@@ -1,0 +1,111 @@
+body{
+    background: #354147;
+    background: url(/img/BG.jpg)  no-repeat;
+    background-size: 100% auto;
+    
+}
+.header {
+    padding-top: 64px;
+    
+}
+.container_wide {
+    max-width: 1920px;
+    padding: 0 80px 200px;
+    margin: 0 auto;
+    
+}
+.header__row {
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo {
+    width: 108px;
+    height: 24px;
+    }
+.nav__item{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+}
+.header__account {
+    display: inline-block;
+    position: relative;
+    padding: 0 0 0 30px ;
+}
+.header__account:before{
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/img/icons/cart.png);
+    background-size: 100%;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    
+}
+
+.header__title {
+    max-width: 1910px;
+    padding: 0 460px 843px 500px;
+    margin: 0 auto;
+    min-width: 950px;
+}
+.header__subtitle {
+    position: relative;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FBD784;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    padding: 0 0 0 104px;
+    margin-bottom: 32px;
+
+}
+.header__subtitle:before{
+    content: '';
+    position: absolute;
+    width: 72px;
+    height: 2px;
+    left: 0px;
+    top: 10px;
+    background: #FBD784;
+}
+.header__main {
+    font-family: 'Chronicle Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 88px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 32px;
+}
+.header__scroll {
+    display: inline-block;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    padding: 0 32px 0 0;
+}
+
+.header__scroll:after{
+    display: block;
+    position:absolute;
+    content: '';
+    background-image: url(/img/icons/arrow_down.svg);
+    width: 16px;
+    height: 24px;
+    top: -2px;
+    right: 0;
+
+    
+}
