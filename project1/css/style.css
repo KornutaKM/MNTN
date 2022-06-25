@@ -1,28 +1,103 @@
-body{
-    background: #354147;
-    background: url(/img/BG.jpg)  no-repeat;
-    background-size: 100% auto;
-    
+@font-face {
+    font-family: 'ChronicleDisplay';
+    src: url('../../fonts/Chronicle Display Semibold.eot');
+    src: local('☺'), url('../fonts/Chronicle Display Semibold.woff') format('woff'), url('../../fonts/Chronicle Display Semibold.ttf') format('truetype'), url('../fonts/Chronicle Display Semibold.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
 }
+@font-face {
+    font-family: 'ChronicleDisplay';
+    src: url('../../fonts/Chronicle Display Black.eot');
+    src: local('☺'), url('../fonts/Chronicle Display Black.woff') format('woff'), url('../fonts/Chronicle Display Black.ttf') format('truetype'), url('../fonts/Chronicle Display Black.svg') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ChronicleDisplay';
+    src: url('../../fonts/Chronicle Display Bold.eot');
+    src: local('☺'), url('../fonts/Chronicle Display Bold.woff') format('woff'), url('../fonts/Chronicle Display Bold.ttf') format('truetype'), url('../fonts/Chronicle Display Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fontsGilroy-Medium.eot');
+    src: url('../fontsGilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fontsGilroy-Medium.woff') format('woff'),
+    url('../fontsGilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-SemiBold.eot');
+    src: url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+        url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.eot');
+    src: url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.eot');
+    src: url('../fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-ExtraBold.woff') format('woff'),
+        url('../fonts/Gilroy-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    background: url(/project1/img/BG.jpg) no-repeat;
+    background-size: cover;
+    font-family: 'Gilroy';
+    color: #fff;
+    background-color: #0B1D26;
+    background-size: cover;
+    min-width: 100%;
+
+
+}
+
+.wrapper {
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
 .header {
     padding-top: 64px;
-    
+
 }
+
 .container_wide {
     max-width: 1920px;
     padding: 0 80px 200px;
     margin: 0 auto;
-    
+
 }
+
 .header__row {
     display: flex;
     justify-content: space-between;
 }
+
 .header__logo {
     width: 108px;
     height: 24px;
-    }
-.nav__item{
+}
+
+.nav__item {
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 700;
@@ -30,36 +105,40 @@ body{
     line-height: 22px;
     color: #fff;
 }
+
 .header__account {
     display: inline-block;
     position: relative;
-    padding: 0 0 0 30px ;
+    padding: 0 0 0 30px;
 }
-.header__account:before{
+
+.header__account:before {
     display: block;
     position: absolute;
     content: "";
-    background-image: url(/img/icons/cart.png);
+    background-image: url(/project1/img/icons/cart.png);
     background-size: 100%;
     left: 0;
     top: 0;
     width: 24px;
     height: 24px;
     color: #fff;
-    
+
 }
 
 .header__title {
+    font-family: 'Gilroy';
     max-width: 1910px;
     padding: 0 460px 843px 500px;
     margin: 0 auto;
     min-width: 950px;
 }
-.header__subtitle {
+
+.subtitle {
     position: relative;
     font-family: 'Gilroy';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 900;
     font-size: 18px;
     color: #FBD784;
     letter-spacing: 6px;
@@ -68,17 +147,23 @@ body{
     margin-bottom: 32px;
 
 }
-.header__subtitle:before{
+
+.subtitle:before {
     content: '';
     position: absolute;
+    background: #FBD784;
+    background-size: cover;
     width: 72px;
     height: 2px;
     left: 0px;
     top: 10px;
-    background: #FBD784;
+    
+    
+    
 }
-.header__main {
-    font-family: 'Chronicle Display';
+
+.main {
+    font-family: 'ChronicleDisplay';
     font-style: normal;
     font-weight: 600;
     font-size: 88px;
@@ -86,7 +171,8 @@ body{
     color: #fff;
     margin-bottom: 32px;
 }
-.header__scroll {
+
+.scroll {
     display: inline-block;
     font-family: 'Gilroy';
     font-style: normal;
@@ -97,15 +183,197 @@ body{
     padding: 0 32px 0 0;
 }
 
-.header__scroll:after{
+.header__scroll:after {
     display: block;
-    position:absolute;
+    position: absolute;
     content: '';
-    background-image: url(/img/icons/arrow_down.svg);
+    background-image: url(/project1/img/icons/arrow_down.svg);
     width: 16px;
     height: 24px;
     top: -2px;
     right: 0;
+}
 
-    
+/*======== content =========*/
+
+.content {
+    max-width: 1462px;
+    margin: 0 auto;
+    flex: 1 1 auto;
+    padding-bottom: 120px;
+
+}
+
+.content__row {
+    display: flex;
+    margin-bottom: 200px;
+}
+
+
+
+.image {
+    max-width: 566px;
+    height: 720px;
+
+}
+
+.content__text {
+    max-width: 896px;
+    padding: 140px 114px 140px 150px;
+    position: relative;
+}
+
+.content__text:before{
+    content: '01';
+    position: absolute;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 240px;
+    opacity: 0.1;
+    top: 40px;
+    left: 0;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.main {
+    font-family: 'ChronicleDisplay';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+.p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 27px;
+}
+
+.text__scroll {
+    color: #FBD784;
+
+}
+
+.text__scroll:after {
+    display: block;
+    position: absolute;
+    content: '';
+    background-image: url(/project1/img/icons/arrow-right.svg);
+    width: 24px;
+    height: 16px;
+    right: -13px;
+    top: 2px;
+
+}
+
+.content__text2 {
+    width: 896px;
+    padding: 140px 0px 140px 264px;
+    position: relative;
+}
+.content__text2:before{
+    content: '02';
+    position: absolute;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 240px;
+    opacity: 0.1;
+    top: 50px;
+    left: 115px;
+}
+
+.content__text3 {
+    width: 896px;
+    padding: 140px 114px 140px 150px;
+    position: relative;
+}
+
+
+
+.content__text3:before{
+    content: '03';
+    position: absolute;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 240px;
+    opacity: 0.1;
+    top: 50px;
+    left: 0px;
+}
+.down__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.down__article {}
+
+.down__logo {
+    max-width: 108px;
+    padding-bottom: 24px;
+}
+
+.down__logo img {
+    width: 100%;
+}
+
+.down__subarticle {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 303px;
+    margin-bottom: 122px;
+}
+
+.down__copy {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.down__more {
+    display: flex;
+}
+
+.down__blog{
+    margin-right: 212px;
+}
+
+.down__title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FBD784;
+    padding-bottom: 24px;
+
+}
+
+ul li {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 14px;
+}
+ul li:last-child{
+    margin: 0;
 }
