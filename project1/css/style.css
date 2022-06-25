@@ -58,7 +58,7 @@
 }
 
 body {
-    background: url(/project1/img/BG.jpg) no-repeat;
+    background: url(../img/BG.jpg) no-repeat;
     background-size: cover;
     font-family: 'Gilroy';
     color: #fff;
@@ -116,7 +116,7 @@ body {
     display: block;
     position: absolute;
     content: "";
-    background-image: url(/project1/img/icons/cart.png);
+    background-image: url(../img/icons/cart.png);
     background-size: 100%;
     left: 0;
     top: 0;
@@ -187,7 +187,7 @@ body {
     display: block;
     position: absolute;
     content: '';
-    background-image: url(/project1/img/icons/arrow_down.svg);
+    background-image: url(../img/icons/arrow_down.svg);
     width: 16px;
     height: 24px;
     top: -2px;
@@ -268,7 +268,7 @@ body {
     display: block;
     position: absolute;
     content: '';
-    background-image: url(/project1/img/icons/arrow-right.svg);
+    background-image: url(../img/icons/arrow-right.svg);
     width: 24px;
     height: 16px;
     right: -13px;
