@@ -5,6 +5,7 @@
     font-weight: 600;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'ChronicleDisplay';
     src: url('../../fonts/Chronicle Display Black.eot');
@@ -12,6 +13,7 @@
     font-weight: 900;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'ChronicleDisplay';
     src: url('../../fonts/Chronicle Display Bold.eot');
@@ -19,15 +21,17 @@
     font-weight: 700;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Gilroy';
     src: url('../fontsGilroy-Medium.eot');
     src: url('../fontsGilroy-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fontsGilroy-Medium.woff') format('woff'),
-    url('../fontsGilroy-Medium.ttf') format('truetype');
+        url('../fontsGilroy-Medium.woff') format('woff'),
+        url('../fontsGilroy-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
-    }
+}
+
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-SemiBold.eot');
@@ -47,6 +51,7 @@
     font-weight: 700;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-ExtraBold.eot');
@@ -157,9 +162,9 @@ body {
     height: 2px;
     left: 0px;
     top: 10px;
-    
-    
-    
+
+
+
 }
 
 .main {
@@ -223,7 +228,7 @@ body {
     position: relative;
 }
 
-.content__text:before{
+.content__text:before {
     content: '01';
     position: absolute;
     font-family: 'Gilroy';
@@ -281,7 +286,8 @@ body {
     padding: 140px 0px 140px 264px;
     position: relative;
 }
-.content__text2:before{
+
+.content__text2:before {
     content: '02';
     position: absolute;
     font-family: 'Gilroy';
@@ -301,7 +307,7 @@ body {
 
 
 
-.content__text3:before{
+.content__text3:before {
     content: '03';
     position: absolute;
     font-family: 'Gilroy';
@@ -312,6 +318,7 @@ body {
     top: 50px;
     left: 0px;
 }
+
 .down__row {
     display: flex;
     justify-content: space-between;
@@ -352,7 +359,7 @@ body {
     display: flex;
 }
 
-.down__blog{
+.down__blog {
     margin-right: 212px;
 }
 
@@ -374,6 +381,7 @@ ul li {
     line-height: 32px;
     margin-bottom: 14px;
 }
-ul li:last-child{
+
+ul li:last-child {
     margin: 0;
 }
